@@ -12,8 +12,8 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aca56b9abe71f52acf7e046f407f0b42
 URL:		http://www.blackperl.com/RPC::XML/
-BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-XML-Parser
+BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,10 +33,14 @@ XML::Parser i LWP z CPAN.
 
 %package Apache
 Summary:        RPC server as an Apache/mod_perl content handler
+Summary(pl):	Serwer RPC jako procedura obs³ugi tre¶ci Apache/mod_perl
 Group:          Applications/Networking
 
 %description Apache
 RPC server as an Apache/mod_perl content handler.
+
+%description Apache -l pl
+Serwer RPC jako procedura obs³ugi tre¶ci Apache/mod_perl.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -49,7 +53,8 @@ RPC server as an Apache/mod_perl content handler.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
