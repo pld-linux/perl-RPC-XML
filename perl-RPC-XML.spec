@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	RPC
-%define	pnam	XML
+%define		pdir	RPC
+%define		pnam	XML
 Summary:	Implementation of XML-RPC for Perl
 Summary(pl):	Implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.41
-Release:	1
+Release:	2
 Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
@@ -51,7 +51,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README README.apache
 %{perl_sitelib}/RPC/XML.pm
 %{perl_sitelib}/RPC/XML
-%{perl_sitelib}/auto/RPC/XML
+%dir %{perl_sitelib}/auto/RPC
+%dir %{perl_sitelib}/auto/RPC/XML
+%dir %{perl_sitelib}/auto/RPC/XML/*
+%{perl_sitelib}/auto/RPC/XML/*/*.al
 %{perl_sitelib}/Apache/RPC
 %{_mandir}/man3/*
 %{_mandir}/man1/*
