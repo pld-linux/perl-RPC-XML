@@ -8,11 +8,11 @@ Summary(pl):	Implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.37
 Release:	1
-Vendor:	Randy J. Ray
-Url:	http://www.blackperl.com/RPC::XML
+Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+URL:		http://www.blackperl.com/RPC::XML/
 BuildRequires:	rpm-perlprov >= 4.0.2-56
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-libwww
@@ -21,10 +21,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
 %description
-The RPC::XML package for Perl is an implementation of the XML-RPC standard
-as defined at <http://www.xmlrpc.com/spec>. It is written in pure Perl without
-use or need of C (or XS) linkage. It does (at present) require the XML::Parser
-and LWP CPAN modules for operation.
+The RPC::XML package for Perl is an implementation of the XML-RPC
+standard as defined at <http://www.xmlrpc.com/spec/>. It is written in
+pure Perl without use or need of C (or XS) linkage. It does (at
+present) require the XML::Parser and LWP CPAN modules for operation.
+
+%description -l pl
+Pakiet RPC::XML jest implementacj± standardu XML-RPC zdefiniowanego na
+<http://www.xmlrpc.com/spec/>. Jest napisany wy³±cznie w Perlu, bez
+³±czenia z C (ani XS). Aktualnie wymaga do dzia³ania modu³ów
+XML::Parser i LWP z CPAN.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
