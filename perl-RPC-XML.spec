@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	RPC
 %define		pnam	XML
-Summary:	Implementation of XML-RPC for Perl
-Summary(pl):	Implementacja standardu XML-RPC dla Perla
+Summary:	RPC::XML - an implementation of XML-RPC for Perl
+Summary(pl):	RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.54
 Release:	1
