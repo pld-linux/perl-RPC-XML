@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	RPC
-%define		pnam	XML
+%define	pdir	RPC
+%define	pnam	XML
 Summary:	RPC::XML - an implementation of XML-RPC for Perl
 Summary(pl):	RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
