@@ -1,8 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-
 %define	pdir	RPC
 %define	pnam	XML
-
 Summary:	Implementation of XML-RPC for Perl
 Summary(pl):	Implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
@@ -13,10 +11,10 @@ License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 URL:		http://www.blackperl.com/RPC::XML/
-BuildRequires:	rpm-perlprov >= 4.0.2-56
 BuildRequires:	perl >= 5.6.1
-BuildRequires:	perl-libwww
 BuildRequires:	perl-XML-Parser
+BuildRequires:	perl-libwww
+BuildRequires:	rpm-perlprov >= 4.0.2-56
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
@@ -44,15 +42,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf ChangeLog README README.apache
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%doc *.gz
+%doc ChangeLog README README.apache
 %{perl_sitelib}/RPC/XML.pm
 %{perl_sitelib}/RPC/XML
 %{perl_sitelib}/auto/RPC/XML
