@@ -14,7 +14,7 @@ URL:		http://www.blackperl.com/RPC::XML/
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-XML-Parser
 BuildRequires:	perl-libwww
-BuildRequires:	rpm-perlprov >= 4.0.2-56
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
