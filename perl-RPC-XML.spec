@@ -5,7 +5,7 @@ Summary:	Implementation of XML-RPC for Perl
 Summary(pl):	Implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.41
-Release:	2
+Release:	3
 Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
@@ -55,6 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_sitelib}/auto/RPC/XML
 %dir %{perl_sitelib}/auto/RPC/XML/*
 %{perl_sitelib}/auto/RPC/XML/*/*.al
+%{perl_sitelib}/auto/RPC/XML/*/autosplit.ix
 %{perl_sitelib}/Apache/RPC
 %{_mandir}/man3/*
 %{_mandir}/man1/*
