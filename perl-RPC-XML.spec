@@ -8,13 +8,13 @@
 Summary:	RPC::XML - an implementation of XML-RPC for Perl
 Summary(pl):	RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-RPC-XML
-Version:	0.56
+Version:	0.57
 Release:	1
 Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5faf49251d8ad90b4a3e183e908918c3
+# Source0-md5:	e69b3dfe1383c324950580fb73670187
 URL:		http://www.blackperl.com/RPC::XML/
 BuildRequires:	perl-XML-Parser
 BuildRequires:	perl-devel >= 1:5.8.0
