@@ -32,9 +32,9 @@ Pakiet RPC::XML jest implementacj± standardu XML-RPC zdefiniowanego na
 XML::Parser i LWP z CPAN.
 
 %package Apache
-Summary:        RPC server as an Apache/mod_perl content handler
+Summary:	RPC server as an Apache/mod_perl content handler
 Summary(pl):	Serwer RPC jako procedura obs³ugi tre¶ci Apache/mod_perl
-Group:          Applications/Networking
+Group:		Applications/Networking
 
 %description Apache
 RPC server as an Apache/mod_perl content handler.
