@@ -4,8 +4,8 @@
 Summary:	Implementation of XML-RPC for Perl
 Summary(pl):	Implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.41
-Release:	3
+Version:	0.44
+Release:	1
 Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
