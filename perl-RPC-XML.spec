@@ -9,7 +9,7 @@ Summary:	RPC::XML - an implementation of XML-RPC for Perl
 Summary(pl):	RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.54
-Release:	1
+Release:	2
 Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
