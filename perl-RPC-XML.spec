@@ -10,6 +10,7 @@ Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	aca56b9abe71f52acf7e046f407f0b42
 URL:		http://www.blackperl.com/RPC::XML/
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-XML-Parser
