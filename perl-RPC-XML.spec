@@ -5,7 +5,7 @@ Summary:	Implementation of XML-RPC for Perl
 Summary(pl):	Implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.53
-Release:	1
+Release:	2
 Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
@@ -31,6 +31,13 @@ Pakiet RPC::XML jest implementacj± standardu XML-RPC zdefiniowanego na
 ³±czenia z C (ani XS). Aktualnie wymaga do dzia³ania modu³ów
 XML::Parser i LWP z CPAN.
 
+%package Apache
+Summary:        RPC server as an Apache/mod_perl content handler
+Group:          Applications/Networking
+
+%description Apache
+RPC server as an Apache/mod_perl content handler.
+
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
@@ -50,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%doc ChangeLog README README.apache
+%doc ChangeLog README
 %{perl_vendorlib}/RPC/XML.pm
 %{perl_vendorlib}/RPC/XML
 %dir %{perl_vendorlib}/auto/RPC
@@ -58,6 +65,13 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorlib}/auto/RPC/XML/*
 %{perl_vendorlib}/auto/RPC/XML/*/*.al
 %{perl_vendorlib}/auto/RPC/XML/*/autosplit.ix
-%{perl_vendorlib}/Apache/RPC
 %{_mandir}/man3/*
+%exclude %{_mandir}/man3/Apache*
 %{_mandir}/man1/*
+
+%files Apache
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/*
+%doc README.apache
+%{perl_vendorlib}/Apache/RPC
+%{_mandir}/man3/Apache*
