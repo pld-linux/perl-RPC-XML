@@ -36,7 +36,7 @@ XML::Parser i LWP z CPAN.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
