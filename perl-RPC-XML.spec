@@ -5,7 +5,7 @@ Summary:	Implementation of XML-RPC for Perl
 Summary(pl):	Implementacja standardu XML-RPC dla Perla
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.52
-Release:	1
+Release:	2
 Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
@@ -14,7 +14,7 @@ URL:		http://www.blackperl.com/RPC::XML/
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-XML-Parser
 BuildRequires:	perl-libwww
-BuildRequires:	rpm-perlprov >= 4.0.2-56
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
@@ -34,7 +34,8 @@ XML::Parser i LWP z CPAN.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -49,13 +50,13 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %doc ChangeLog README README.apache
-%{perl_sitelib}/RPC/XML.pm
-%{perl_sitelib}/RPC/XML
-%dir %{perl_sitelib}/auto/RPC
-%dir %{perl_sitelib}/auto/RPC/XML
-%dir %{perl_sitelib}/auto/RPC/XML/*
-%{perl_sitelib}/auto/RPC/XML/*/*.al
-%{perl_sitelib}/auto/RPC/XML/*/autosplit.ix
-%{perl_sitelib}/Apache/RPC
+%{perl_vendorlib}/RPC/XML.pm
+%{perl_vendorlib}/RPC/XML
+%dir %{perl_vendorlib}/auto/RPC
+%dir %{perl_vendorlib}/auto/RPC/XML
+%dir %{perl_vendorlib}/auto/RPC/XML/*
+%{perl_vendorlib}/auto/RPC/XML/*/*.al
+%{perl_vendorlib}/auto/RPC/XML/*/autosplit.ix
+%{perl_vendorlib}/Apache/RPC
 %{_mandir}/man3/*
 %{_mandir}/man1/*
