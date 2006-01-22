@@ -8,13 +8,13 @@
 Summary:	RPC::XML - an implementation of XML-RPC for Perl
 Summary(pl):	RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-RPC-XML
-Version:	0.57
+Version:	0.58
 Release:	1
 Vendor:		Randy J. Ray
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e69b3dfe1383c324950580fb73670187
+# Source0-md5:	ee16374ad2763a69c5652ac0feea3f84
 URL:		http://www.blackperl.com/RPC::XML/
 BuildRequires:	perl-XML-Parser
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -28,12 +28,14 @@ The RPC::XML package for Perl is an implementation of the XML-RPC
 standard as defined at <http://www.xmlrpc.com/spec/>. It is written in
 pure Perl without use or need of C (or XS) linkage. It does (at
 present) require the XML::Parser and LWP CPAN modules for operation.
+Version 0.60 will switch to XML::LibXML in place of XML::Parser.
 
 %description -l pl
 Pakiet RPC::XML jest implementacj± standardu XML-RPC zdefiniowanego na
 <http://www.xmlrpc.com/spec/>. Jest napisany wy³±cznie w Perlu, bez
 ³±czenia z C (ani XS). Aktualnie wymaga do dzia³ania modu³ów
-XML::Parser i LWP z CPAN.
+XML::Parser i LWP z CPAN. Wersja 0.60 bedzie u?ywa? XML::LibXML zamiast
+XML::Parser.
 
 %package Apache
 Summary:	RPC server as an Apache/mod_perl content handler
