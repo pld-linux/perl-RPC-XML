@@ -84,6 +84,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files Apache
 %defattr(644,root,root,755)
-%%doc README.apache2
+%doc README.apache2
 %{perl_vendorlib}/Apache/RPC
 %{_mandir}/man3/Apache*
