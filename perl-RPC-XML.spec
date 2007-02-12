@@ -6,7 +6,7 @@
 %define		pdir	RPC
 %define		pnam	XML
 Summary:	RPC::XML - an implementation of XML-RPC for Perl
-Summary(pl):	RPC::XML - implementacja standardu XML-RPC dla Perla
+Summary(pl.UTF-8):   RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-RPC-XML
 Version:	0.59
 Release:	1
@@ -29,23 +29,23 @@ pure Perl without use or need of C (or XS) linkage. It does (at
 present) require the XML::Parser and LWP CPAN modules for operation.
 Version 0.60 will switch to XML::LibXML in place of XML::Parser.
 
-%description -l pl
-Pakiet RPC::XML jest implementacj± standardu XML-RPC zdefiniowanego na
-<http://www.xmlrpc.com/spec/>. Jest napisany wy≥±cznie w Perlu, bez
-≥±czenia z C (ani XS). Aktualnie wymaga do dzia≥ania modu≥Ûw
+%description -l pl.UTF-8
+Pakiet RPC::XML jest implementacjƒÖ standardu XML-RPC zdefiniowanego na
+<http://www.xmlrpc.com/spec/>. Jest napisany wy≈ÇƒÖcznie w Perlu, bez
+≈ÇƒÖczenia z C (ani XS). Aktualnie wymaga do dzia≈Çania modu≈Ç√≥w
 XML::Parser i LWP z CPAN. Wersja 0.60 bedzie u?ywa? XML::LibXML zamiast
 XML::Parser.
 
 %package Apache
 Summary:	RPC server as an Apache/mod_perl content handler
-Summary(pl):	Serwer RPC jako procedura obs≥ugi tre∂ci Apache/mod_perl
+Summary(pl.UTF-8):   Serwer RPC jako procedura obs≈Çugi tre≈õci Apache/mod_perl
 Group:		Applications/Networking
 
 %description Apache
 RPC server as an Apache/mod_perl content handler.
 
-%description Apache -l pl
-Serwer RPC jako procedura obs≥ugi tre∂ci Apache/mod_perl.
+%description Apache -l pl.UTF-8
+Serwer RPC jako procedura obs≈Çugi tre≈õci Apache/mod_perl.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
