@@ -6,7 +6,7 @@
 %define		pdir	RPC
 %define		pnam	XML
 Summary:	RPC::XML - an implementation of XML-RPC for Perl
-Summary(pl.UTF-8):   RPC::XML - implementacja standardu XML-RPC dla Perla
+Summary(pl.UTF-8):	RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-RPC-XML
 Version:	0.59
 Release:	1
@@ -38,7 +38,7 @@ XML::Parser.
 
 %package Apache
 Summary:	RPC server as an Apache/mod_perl content handler
-Summary(pl.UTF-8):   Serwer RPC jako procedura obsługi treści Apache/mod_perl
+Summary(pl.UTF-8):	Serwer RPC jako procedura obsługi treści Apache/mod_perl
 Group:		Applications/Networking
 
 %description Apache
