@@ -8,12 +8,12 @@
 Summary:	RPC::XML - an implementation of XML-RPC for Perl
 Summary(pl.UTF-8):	RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-RPC-XML
-Version:	0.69
-Release:	2
+Version:	0.76
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	98fa74810c72f3b05c987e6c8d5d83fb
+# Source0-md5:	731aaf588e6bd45b3a9cece8d4223e48
 URL:		http://www.blackperl.com/RPC::XML/
 BuildRequires:	perl-XML-Parser
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -70,13 +70,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %doc ChangeLog README
-%{perl_vendorlib}/RPC/XML.pm
+%dir %{perl_vendorlib}/RPC
 %{perl_vendorlib}/RPC/XML
-%dir %{perl_vendorlib}/auto/RPC
-%dir %{perl_vendorlib}/auto/RPC/XML
-%dir %{perl_vendorlib}/auto/RPC/XML/*
-%{perl_vendorlib}/auto/RPC/XML/*/*.al
-%{perl_vendorlib}/auto/RPC/XML/*/autosplit.ix
+%{perl_vendorlib}/RPC/XML.pm
 %{_mandir}/man3/*
 %exclude %{_mandir}/man3/Apache*
 %{_mandir}/man1/*
