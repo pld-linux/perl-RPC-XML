@@ -1,0 +1,20 @@
+--- RPC-XML-0.76/lib/Apache/RPC/Server.pm~	2011-08-15 06:36:39.000000000 +0200
++++ RPC-XML-0.76/lib/Apache/RPC/Server.pm	2012-07-16 22:22:46.517582097 +0200
+@@ -36,6 +36,7 @@
+ use Socket;
+ use File::Spec;
+ 
++use Apache2::compat;
+ use Apache;
+ use Apache::File; # For ease-of-use methods like set_last_modified
+ use Apache::Constants ':common';
+--- RPC-XML-0.76/lib/Apache/RPC/Status.pm~	2011-07-23 09:02:47.000000000 +0200
++++ RPC-XML-0.76/lib/Apache/RPC/Status.pm	2012-07-16 22:23:20.637580893 +0200
+@@ -48,6 +48,7 @@
+ use subs qw(header footer main_screen server_summary server_detail
+             method_summary method_detail);
+ 
++use Apache2::compat;
+ use Apache;
+ use Apache::Constants qw(DECLINED OK SERVER_VERSION);
+ use CGI;
