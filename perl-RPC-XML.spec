@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	RPC
 %define		pnam	XML
 Summary:	RPC::XML - an implementation of XML-RPC for Perl
