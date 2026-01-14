@@ -8,7 +8,7 @@ Summary:	RPC::XML - an implementation of XML-RPC for Perl
 Summary(pl.UTF-8):	RPC::XML - implementacja standardu XML-RPC dla Perla
 Name:		perl-RPC-XML
 Version:	0.76
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
